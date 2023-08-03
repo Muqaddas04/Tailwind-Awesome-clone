@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="shadow-lg fixed top-0 w-full bg-white z-10">
+      <div class="container mx-auto py-5 flex justify-between">
+        <div class="flex gap-5 items-center text-gray-400">
+          <a href="#" class="text-indigo-700 text-xl font-extrabold"
+            >Tailwind Awesome</a
+          >
+          <a href="#">Home</a>
+          <a href="#">Templates</a>
+          <a href="#">UI Kits</a>
+          <a href="#">Freebies</a>
+        </div>
+        <div class="flex relative">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Get notified bluh bluh bluh"
+            class="border-2 rounded-full py-1 px-2 w-96 box-border"
+          />
+          <button
+            class="bg-indigo-700 text-white py-1 px-2 rounded-full absolute top-0 right-0 border-2 border-indigo-700"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="mt-32">
+      <div class="container mx-auto flex flex-col items-center w-full">
+        <h1 class="text-5xl font-extrabold">Free Tailwind resources</h1>
+        <p class="w-3/5 text-gray-400 text-sm mt-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ullam
+          voluptate est quidem earum modi magnam velit, dicta placeat? Nulla ab
+          odio harum non suscipit inventore molestias assumenda tempora soluta.
+        </p>
+        <div class="relative w-2/5 mt-5">
+          <input
+            type="text"
+            class="w-full border-2 rounded-full py-4 px-2 shadow-lg border-white"
+            placeholder="e.g. Blog"
+            id="search"
+          />
+          <button
+            class="bg-indigo-700 text-white rounded-full py-2 px-7 absolute top-2 right-2"
+            id="searchButton"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="mt-20">
+      <div class="flex justify-around container mx-auto">
+        <select class="border-2 w-1/6 rounded-lg py-2">
+          <option value="">Free</option>
+          <option value="">10$</option>
+          <option value="">20$</option>
+        </select>
+        <div
+          class="bg-gray-200 w-2/6 rounded-lg flex items-center justify-evenly gap-2 px-2"
+        >
+          <a href="#" class="bg-white w-1/3 rounded-lg py-1 text-center">All</a>
+          <a href="#" class="w-1/3 rounded-lg py-1 text-center">Templates</a>
+          <a href="#" class="w-1/3 rounded-lg py-1 text-center">UI Kits</a>
+        </div>
+        <select class="border-2 w-1/6 rounded-lg py-2">
+          <option value="">Any Technology</option>
+          <option value="">10$</option>
+          <option value="">20$</option>
+        </select>
+      </div>
+    </section>
+    <main class="my-10">
+      <div
+        class="flex justify-between gap-2 flex-wrap container mx-auto"
+        id="main-cards"
+      ></div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
